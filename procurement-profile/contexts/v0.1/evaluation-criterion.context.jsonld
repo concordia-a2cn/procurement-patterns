@@ -1,0 +1,76 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "https://spec.bidangelai.com/v0.1/",
+    "bapp": "https://spec.bidangelai.com/v0.1/",
+    "ubl": "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2#",
+    "ubl-cac": "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2#",
+    "ocds": "https://standard.open-contracting.org/schema/v1__1__5/extensions/requirements/master/release-schema.json#/",
+    "eforms": "http://publications.europa.eu/resource/eforms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "EvaluationCriterion": "bapp:EvaluationCriterion",
+    "perRowKey": {
+      "@id": "bapp:perRowKey",
+      "@type": "xsd:string"
+    },
+    "externalId": {
+      "@id": "ubl:ID",
+      "@type": "xsd:string"
+    },
+    "name": {
+      "@id": "ubl:Name",
+      "@type": "xsd:string"
+    },
+    "description": {
+      "@id": "ubl:Description",
+      "@type": "xsd:string"
+    },
+    "criterionType": {
+      "@id": "bapp:criterionType",
+      "@type": "@vocab"
+    },
+    "criterionTypeCode": {
+      "@id": "ubl:CriterionTypeCode",
+      "@type": "xsd:string"
+    },
+    "evaluationMethod": {
+      "@id": "bapp:evaluationMethod",
+      "@type": "@vocab"
+    },
+    "weightNumeric": {
+      "@id": "ubl:WeightNumeric",
+      "@type": "xsd:double"
+    },
+    "weightingConsiderationText": {
+      "@id": "ubl:WeightingConsiderationDescription",
+      "@type": "xsd:string"
+    },
+    "lotRef": {
+      "@id": "bapp:lotRef",
+      "@type": "xsd:string"
+    },
+    "parentCriterionPerRowKey": {
+      "@id": "bapp:parentCriterionPerRowKey",
+      "@type": "xsd:string"
+    },
+    "cpvCode": {
+      "@id": "ubl:ItemClassificationCode",
+      "@type": "xsd:string"
+    },
+    "legislationRef": {
+      "@id": "bapp:legislationRef",
+      "@type": "xsd:string"
+    }
+  },
+  "_meta": {
+    "profileVersion": "v0.1",
+    "fragmentTypeName": "CanonicalEvaluationCriterionFragment",
+    "contractSource": "packages/structured-rfx-adapters/src/contract.ts",
+    "crosswalkSource": "docs/crosswalks/ubl-peppol-evaluation-criterion.md",
+    "excludedFromContext": [
+      "fields"
+    ],
+    "generator": "scripts/spec-context-build.mjs",
+    "note": "Generated artifact. Edit the field map under scripts/spec-context/fragments/ and re-run `pnpm spec:context:build`. Do not edit by hand."
+  }
+}

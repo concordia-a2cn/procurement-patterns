@@ -1,0 +1,105 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "https://spec.bidangelai.com/v0.1/",
+    "bapp": "https://spec.bidangelai.com/v0.1/",
+    "ubl": "urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2#",
+    "ubl-cac": "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2#",
+    "ocds": "https://standard.open-contracting.org/schema/v1__1__5/extensions/requirements/master/release-schema.json#/",
+    "eforms": "http://publications.europa.eu/resource/eforms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "Opportunity": "bapp:Opportunity",
+    "perRowKey": {
+      "@id": "bapp:perRowKey",
+      "@type": "xsd:string"
+    },
+    "externalId": {
+      "@id": "ubl:ID",
+      "@type": "xsd:string"
+    },
+    "canonicalTitle": {
+      "@id": "ubl:Name",
+      "@type": "xsd:string"
+    },
+    "summary": {
+      "@id": "ubl:Description",
+      "@type": "xsd:string"
+    },
+    "buyerRef": {
+      "@id": "bapp:buyerRef",
+      "@type": "@id"
+    },
+    "opportunityType": {
+      "@id": "bapp:opportunityType",
+      "@type": "@vocab"
+    },
+    "opportunityTypeCode": {
+      "@id": "bapp:opportunityTypeCode",
+      "@type": "xsd:string"
+    },
+    "contractVehicle": {
+      "@id": "bapp:contractVehicle",
+      "@type": "xsd:string"
+    },
+    "status": {
+      "@id": "bapp:status",
+      "@type": "@vocab"
+    },
+    "publishAt": {
+      "@id": "ubl:IssueDate",
+      "@type": "xsd:dateTime"
+    },
+    "dueAt": {
+      "@id": "bapp:dueAt",
+      "@type": "xsd:dateTime"
+    },
+    "estimatedValueLow": {
+      "@id": "bapp:estimatedValueLow",
+      "@type": "xsd:double"
+    },
+    "estimatedValueHigh": {
+      "@id": "bapp:estimatedValueHigh",
+      "@type": "xsd:double"
+    },
+    "currency": {
+      "@id": "ubl:DocumentCurrencyCode",
+      "@type": "xsd:string"
+    },
+    "geography": {
+      "@id": "bapp:geography",
+      "@type": "xsd:string"
+    },
+    "noticeId": {
+      "@id": "bapp:noticeId",
+      "@type": "xsd:string"
+    },
+    "lotRef": {
+      "@id": "bapp:lotRef",
+      "@type": "xsd:string"
+    },
+    "primaryCategoryCode": {
+      "@id": "ubl:ItemClassificationCode",
+      "@type": "xsd:string"
+    },
+    "primaryCategoryScheme": {
+      "@id": "bapp:primaryCategoryScheme",
+      "@type": "@vocab"
+    }
+  },
+  "_meta": {
+    "profileVersion": "v0.1",
+    "fragmentTypeName": "CanonicalOpportunityFragment",
+    "contractSource": "packages/structured-rfx-adapters/src/contract.ts",
+    "crosswalkSource": "docs/crosswalks/ubl-peppol-opportunity.md",
+    "excludedFromContext": [
+      "regime",
+      "sourceFamily",
+      "procurementRegime",
+      "sourceConfidence",
+      "sourceMetadata",
+      "fields"
+    ],
+    "generator": "scripts/spec-context-build.mjs",
+    "note": "Generated artifact. Edit the field map under scripts/spec-context/fragments/ and re-run `pnpm spec:context:build`. Do not edit by hand."
+  }
+}
